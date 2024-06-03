@@ -10,6 +10,8 @@ import GoogleAPIClientForREST_Calendar
 
 class EventDetailsViewModel {
     
-    var event: GTLRCalendar_Event?
+    // MARK: - Properties
+    
+    var event: GTLRCalendar_Event? // Holds the event details
     
 }

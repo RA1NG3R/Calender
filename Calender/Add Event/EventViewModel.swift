@@ -10,19 +10,25 @@ import GoogleAPIClientForREST_Calendar
 
 class EventViewModel {
     
-    private let calendarService = CalendarService()
+    // MARK: - Properties
     
-    var event: GTLRCalendar_Event?
-    var onError: ((Error) -> Void)?
+    private let calendarService: CalendarService
     
-    func addEvent(summary: String, description: String, startDate: Date, endDate: Date) {
-        calendarService.addEventToGoogleCalendar(summary: summary, description: description, startDate: startDate, endDate: endDate) { [weak self] error in
-                if let error = error {
-                    self?.onError?(error)
-                    print(error)
-                }
+    // MARK: - Initialization
+    
+    init(calendarService: CalendarService = CalendarService()) {
+        self.calendarService = calendarService
+    }
+    
+    // MARK: - Methods
+    
+    func addEvent(summary: String, description: String, startDate: Date, endDate: Date, completion: @escaping (Error?) -> Void) {
+        calendarService.addEventToGoogleCalendar(summary: summary, description: description, startDate: startDate, endDate: endDate) { error in
+            completion(error)
+            if let error = error {
+                print(error)
             }
         }
-    
-    
+    }
 }
+

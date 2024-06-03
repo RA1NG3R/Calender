@@ -12,55 +12,40 @@ import GoogleAPIClientForREST_Calendar
 
 class LoginViewController: UIViewController {
     
+    // MARK: - Outlets
+    @IBOutlet weak var btnSignIn: GIDSignInButton!  // Google Sign-In button
     
-    @IBOutlet weak var btnSignIn: GIDSignInButton!
+    // MARK: - Properties
+    var viewModel = LoginViewModel()  // Instance of the view model
     
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Any additional setup after loading the view.
     }
     
-    
-    @objc func presentSecondVC() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let secondVC = storyboard.instantiateViewController(withIdentifier: "CalenderViewController") as! CalenderViewController
-        self.navigationController!.pushViewController(secondVC, animated: true)
-    }
-    
-    
+    // MARK: - Actions
     @IBAction func signInBtnAction(_ sender: Any) {
-        
-        googleSignInAction()
-        
-    }
-    
-    func googleSignInAction() {
-        
-        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-        
-        // Create Google Sign In configuration object.
-        let config = GIDConfiguration(clientID: clientID)
-        let scopes = [kGTLRAuthScopeCalendar]
-        
-        GIDSignIn.sharedInstance.configuration = config
-        
-        // Start the sign in flow!
-        GIDSignIn.sharedInstance.signIn(withPresenting: self) { authentication, error in
+        // Call the sign-in action from the view model
+        viewModel.googleSignInAction(presentingViewController: self) { [weak self] error in
             if let error = error {
                 print("There is an error signing the user in ==> \(error)")
-                return
-            }
-            self.presentSecondVC()
-            guard let user = authentication?.user, let idToken = user.idToken?.tokenString else { return }
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
-            user.addScopes(scopes, presenting: self)
-            // Sign in with Firebase
-            Auth.auth().signIn(with: credential) { authResult, error in
-                if error != nil {
-                    print(error!)
-                }
+            } else {
+                // Navigate to the Calendar view controller if sign-in is successful
+                self?.navigateToCalendar()
             }
         }
     }
+    
+    // MARK: - Navigation
+    @objc func navigateToCalendar() {
+        // Instantiate the Calendar view controller from the storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: "CalenderViewController") as! CalenderViewController
+        
+        // Push the Calendar view controller onto the navigation stack
+        self.navigationController!.pushViewController(secondVC, animated: true)
+    }
 }
+
 

@@ -9,21 +9,54 @@
 /* Begin PBXBuildFile section */
 		5D36A0792C09CF3B003384B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36A0782C09CF3B003384B3 /* AppDelegate.swift */; };
 		5D36A07B2C09CF3B003384B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36A07A2C09CF3B003384B3 /* SceneDelegate.swift */; };
-		5D36A07D2C09CF3B003384B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36A07C2C09CF3B003384B3 /* ViewController.swift */; };
+		5D36A07D2C09CF3B003384B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36A07C2C09CF3B003384B3 /* LoginViewController.swift */; };
 		5D36A0802C09CF3B003384B3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5D36A07F2C09CF3B003384B3 /* Base */; };
 		5D36A0822C09CF3C003384B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D36A0812C09CF3C003384B3 /* Assets.xcassets */; };
 		5D36A0852C09CF3C003384B3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5D36A0842C09CF3C003384B3 /* Base */; };
+		5D36A0952C0B28A5003384B3 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36A0942C0B28A5003384B3 /* CalenderViewController.swift */; };
+		5D36A09C2C0B3017003384B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D36A09B2C0B3017003384B3 /* GoogleService-Info.plist */; };
+		5D94C97A2C0CBD0400569625 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5D94C9792C0CBD0400569625 /* FSCalendar */; };
+		5D94C9822C0CBD2D00569625 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5D94C9812C0CBD2D00569625 /* FirebaseAuth */; };
+		5D94C9882C0CBEE900569625 /* GoogleAPIClientForREST_Calendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5D94C9872C0CBEE900569625 /* GoogleAPIClientForREST_Calendar */; };
+		5D94C98C2C0CDD8D00569625 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C98B2C0CDD8D00569625 /* Utils.swift */; };
+		5D94C9932C0CE39B00569625 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5D94C9922C0CE39B00569625 /* GoogleSignIn */; };
+		5D94C9952C0CE39B00569625 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D94C9942C0CE39B00569625 /* GoogleSignInSwift */; };
+		5D94C9972C0D0F6700569625 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C9962C0D0F6700569625 /* EventViewController.swift */; };
+		5D94C9992C0DA35600569625 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C9982C0DA35600569625 /* EventViewModel.swift */; };
+		5D94C99B2C0DA57400569625 /* CalenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C99A2C0DA57400569625 /* CalenderService.swift */; };
+		5D94C99D2C0DB63E00569625 /* CalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C99C2C0DB63E00569625 /* CalenderViewModel.swift */; };
+		5D94C9A02C0DBE3E00569625 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C99E2C0DBE3E00569625 /* EventTableViewCell.swift */; };
+		5D94C9A12C0DBE3E00569625 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D94C99F2C0DBE3E00569625 /* EventTableViewCell.xib */; };
+		5D94C9A32C0DCA9500569625 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C9A22C0DCA9500569625 /* LoginViewModel.swift */; };
+		5D94C9AC2C0DE66E00569625 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C9AB2C0DE66E00569625 /* EventDetailsViewController.swift */; };
+		5D94C9AE2C0DE82D00569625 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C9AD2C0DE82D00569625 /* EventDetailsViewModel.swift */; };
+		5D94C9B12C0DF43E00569625 /* NoEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94C9AF2C0DF43E00569625 /* NoEventsTableViewCell.swift */; };
+		5D94C9B22C0DF43E00569625 /* NoEventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D94C9B02C0DF43E00569625 /* NoEventsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D36A0752C09CF3B003384B3 /* Calender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D36A0782C09CF3B003384B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D36A07A2C09CF3B003384B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D36A07C2C09CF3B003384B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D36A07C2C09CF3B003384B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5D36A07F2C09CF3B003384B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D36A0812C09CF3C003384B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D36A0842C09CF3C003384B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D36A0862C09CF3C003384B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D36A0942C0B28A5003384B3 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		5D36A09B2C0B3017003384B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D94C98B2C0CDD8D00569625 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5D94C9962C0D0F6700569625 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		5D94C9982C0DA35600569625 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		5D94C99A2C0DA57400569625 /* CalenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderService.swift; sourceTree = "<group>"; };
+		5D94C99C2C0DB63E00569625 /* CalenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewModel.swift; sourceTree = "<group>"; };
+		5D94C99E2C0DBE3E00569625 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		5D94C99F2C0DBE3E00569625 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		5D94C9A22C0DCA9500569625 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5D94C9AB2C0DE66E00569625 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		5D94C9AD2C0DE82D00569625 /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
+		5D94C9AF2C0DF43E00569625 /* NoEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEventsTableViewCell.swift; sourceTree = "<group>"; };
+		5D94C9B02C0DF43E00569625 /* NoEventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoEventsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D94C9932C0CE39B00569625 /* GoogleSignIn in Frameworks */,
+				5D94C97A2C0CBD0400569625 /* FSCalendar in Frameworks */,
+				5D94C9882C0CBEE900569625 /* GoogleAPIClientForREST_Calendar in Frameworks */,
+				5D94C9952C0CE39B00569625 /* GoogleSignInSwift in Frameworks */,
+				5D94C9822C0CBD2D00569625 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +94,85 @@
 		5D36A0772C09CF3B003384B3 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
+				5D94C9A92C0DCBA500569625 /* Services */,
+				5D94C9A42C0DCA9E00569625 /* Login */,
+				5D94C9A52C0DCAB400569625 /* Calender Home */,
+				5D94C9A62C0DCB0B00569625 /* Add Event */,
+				5D94C9AA2C0DE64E00569625 /* Event Details */,
+				5D94C9A72C0DCB2300569625 /* Utils */,
 				5D36A0782C09CF3B003384B3 /* AppDelegate.swift */,
 				5D36A07A2C09CF3B003384B3 /* SceneDelegate.swift */,
-				5D36A07C2C09CF3B003384B3 /* ViewController.swift */,
 				5D36A07E2C09CF3B003384B3 /* Main.storyboard */,
 				5D36A0812C09CF3C003384B3 /* Assets.xcassets */,
 				5D36A0832C09CF3C003384B3 /* LaunchScreen.storyboard */,
 				5D36A0862C09CF3C003384B3 /* Info.plist */,
+				5D36A09B2C0B3017003384B3 /* GoogleService-Info.plist */,
 			);
 			path = Calender;
+			sourceTree = "<group>";
+		};
+		5D94C9A42C0DCA9E00569625 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C9A22C0DCA9500569625 /* LoginViewModel.swift */,
+				5D36A07C2C09CF3B003384B3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5D94C9A52C0DCAB400569625 /* Calender Home */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C9A82C0DCB3400569625 /* Views */,
+				5D94C99C2C0DB63E00569625 /* CalenderViewModel.swift */,
+				5D36A0942C0B28A5003384B3 /* CalenderViewController.swift */,
+			);
+			path = "Calender Home";
+			sourceTree = "<group>";
+		};
+		5D94C9A62C0DCB0B00569625 /* Add Event */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C9982C0DA35600569625 /* EventViewModel.swift */,
+				5D94C9962C0D0F6700569625 /* EventViewController.swift */,
+			);
+			path = "Add Event";
+			sourceTree = "<group>";
+		};
+		5D94C9A72C0DCB2300569625 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C98B2C0CDD8D00569625 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5D94C9A82C0DCB3400569625 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C99E2C0DBE3E00569625 /* EventTableViewCell.swift */,
+				5D94C99F2C0DBE3E00569625 /* EventTableViewCell.xib */,
+				5D94C9AF2C0DF43E00569625 /* NoEventsTableViewCell.swift */,
+				5D94C9B02C0DF43E00569625 /* NoEventsTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D94C9A92C0DCBA500569625 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C99A2C0DA57400569625 /* CalenderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D94C9AA2C0DE64E00569625 /* Event Details */ = {
+			isa = PBXGroup;
+			children = (
+				5D94C9AB2C0DE66E00569625 /* EventDetailsViewController.swift */,
+				5D94C9AD2C0DE82D00569625 /* EventDetailsViewModel.swift */,
+			);
+			path = "Event Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +191,13 @@
 			dependencies = (
 			);
 			name = Calender;
+			packageProductDependencies = (
+				5D94C9792C0CBD0400569625 /* FSCalendar */,
+				5D94C9812C0CBD2D00569625 /* FirebaseAuth */,
+				5D94C9872C0CBEE900569625 /* GoogleAPIClientForREST_Calendar */,
+				5D94C9922C0CE39B00569625 /* GoogleSignIn */,
+				5D94C9942C0CE39B00569625 /* GoogleSignInSwift */,
+			);
 			productName = Calender;
 			productReference = 5D36A0752C09CF3B003384B3 /* Calender.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +226,12 @@
 				Base,
 			);
 			mainGroup = 5D36A06C2C09CF3B003384B3;
+			packageReferences = (
+				5D94C9782C0CBD0400569625 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				5D94C9802C0CBD2D00569625 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5D94C9862C0CBEE900569625 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
+				5D94C9912C0CE39B00569625 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 5D36A0762C09CF3B003384B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D94C9A12C0DBE3E00569625 /* EventTableViewCell.xib in Resources */,
 				5D36A0822C09CF3C003384B3 /* Assets.xcassets in Resources */,
+				5D36A09C2C0B3017003384B3 /* GoogleService-Info.plist in Resources */,
 				5D36A0852C09CF3C003384B3 /* Base in Resources */,
 				5D36A0802C09CF3B003384B3 /* Base in Resources */,
+				5D94C9B22C0DF43E00569625 /* NoEventsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +262,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D36A07D2C09CF3B003384B3 /* ViewController.swift in Sources */,
+				5D94C9A02C0DBE3E00569625 /* EventTableViewCell.swift in Sources */,
+				5D36A0952C0B28A5003384B3 /* CalenderViewController.swift in Sources */,
+				5D94C9AC2C0DE66E00569625 /* EventDetailsViewController.swift in Sources */,
+				5D94C9972C0D0F6700569625 /* EventViewController.swift in Sources */,
+				5D36A07D2C09CF3B003384B3 /* LoginViewController.swift in Sources */,
+				5D94C98C2C0CDD8D00569625 /* Utils.swift in Sources */,
 				5D36A0792C09CF3B003384B3 /* AppDelegate.swift in Sources */,
 				5D36A07B2C09CF3B003384B3 /* SceneDelegate.swift in Sources */,
+				5D94C9A32C0DCA9500569625 /* LoginViewModel.swift in Sources */,
+				5D94C99D2C0DB63E00569625 /* CalenderViewModel.swift in Sources */,
+				5D94C9B12C0DF43E00569625 /* NoEventsTableViewCell.swift in Sources */,
+				5D94C99B2C0DA57400569625 /* CalenderService.swift in Sources */,
+				5D94C9AE2C0DE82D00569625 /* EventDetailsViewModel.swift in Sources */,
+				5D94C9992C0DA35600569625 /* EventViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +498,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D94C9782C0CBD0400569625 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		5D94C9802C0CBD2D00569625 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+		5D94C9862C0CBEE900569625 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
+			requirement = {
+				kind = exactVersion;
+				version = 3.5.4;
+			};
+		};
+		5D94C9912C0CE39B00569625 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D94C9792C0CBD0400569625 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D94C9782C0CBD0400569625 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		5D94C9812C0CBD2D00569625 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D94C9802C0CBD2D00569625 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5D94C9872C0CBEE900569625 /* GoogleAPIClientForREST_Calendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D94C9862C0CBEE900569625 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Calendar;
+		};
+		5D94C9922C0CE39B00569625 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D94C9912C0CE39B00569625 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		5D94C9942C0CE39B00569625 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D94C9912C0CE39B00569625 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D36A06D2C09CF3B003384B3 /* Project object */;
 }
